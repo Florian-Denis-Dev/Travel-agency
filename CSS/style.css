@@ -58,6 +58,30 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/********** header *****************/
+
+#header {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+#header-logo {
+    grid-column-start: 1;
+}
+
+
+#header-boutton-hebergements {
+    grid-column-start: 4;
+}
+#header-boutton-activites {
+    grid-column-start: 5;
+} 
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
