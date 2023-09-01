@@ -119,10 +119,39 @@ button:hover {
     color: var(--main-color);
 }
 */
-/************* Trouvez votre hébergement *************/
+/************* recherche hébergement *************/
 
 article {
     padding: 1vw;
+}
+
+#bloc-recherche {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#bloc-recherche-dot {
+    padding: 1vw;
+    background-color: var(--main-bg-color);
+    border-radius: 40% 0% 0% 40%;
+}
+
+#bloc-recherche-localisation{
+    border-color: var(--main-bg-color);
+}
+
+::placeholder {
+    color: black;
+    padding: 1vw;
+    font-style: bold;
+}
+
+#bloc-recherche-submit {
+    background-color: var(--main-color);
+    border-radius: 0vw 1vw 1vw 0vw;
+    border-color: var(--main-color);
+    padding: 1vw;
+    color: var(--main-bg-color) ;
 }
 
 /****** Hebergements And Populaires ***********/
