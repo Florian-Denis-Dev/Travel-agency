@@ -36,16 +36,43 @@
             </nav>
         </header>
         <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
-                    <div> 
-                        <p id="hebergements">listes temporaire des icones à utiliser:</p>
-                        <i class="fa-xs fa-solid fa-dog" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-info" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-person" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-chart-line" aria-hidden="true"></i>
-                        <i class="fa-xs fa-solid fa-fire" aria-hidden="true"></i>
+            <section>
+                <article> 
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </article>
+                <article>
+                    <form method="get" action="">
+                        <label for="localisation">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </label>
+                        <input type="text" name="localisation" id="localisation" placeholder="Marseille, France"></input>
+                        <button id="recherche-localisation">Rechercher</button>
+                        <!------------------------------ bouton pour la version mobile: 
+                        <button>
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        ----------------------------------------------------------------->
+                    </form>
+                </article>
+                <article>
+                    <div>
+                        <h3>Filtres</h3>
                     </div>
+                    <div>
+                        <div><i class="fa-solid fa-money-bill-wave"></i>Economique</div>
+                        <div><i class="fa-xs fa-solid fa-person" aria-hidden="true"></i>Familial</div>
+                        <div><i class="fa-solid fa-heart"></i>Romantique</div>
+                        <div><i class="fa-xs fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</div>                 
+                    </div>
+                </article>
+                <article>
+                    <i class="fa-solid fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </article> 
+            </section>
+            <div class="hebergements-and-populaires">
+                <section class="hebergements">                    
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">

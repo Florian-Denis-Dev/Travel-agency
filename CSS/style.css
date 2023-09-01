@@ -16,6 +16,15 @@
     color: var(--main-color);
 }
 
+.fa-location-dot {
+    color: black;
+}
+
+.fa-magnifying-glass {
+    color: var(--main-bg-color);
+    background-color: var(--main-color);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -72,7 +81,7 @@ nav ul {
     list-style: none;
 }
 
-button {
+li button {
     border-style: none;
     border-width: 0;
     background-color: transparent;
@@ -110,6 +119,11 @@ button:hover {
     color: var(--main-color);
 }
 */
+/************* Trouvez votre hébergement *************/
+
+article {
+    padding: 1vw;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
