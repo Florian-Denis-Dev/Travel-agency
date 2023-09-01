@@ -72,23 +72,44 @@ nav ul {
     list-style: none;
 }
 
+button {
+    border-style: none;
+    border-width: 0;
+    background-color: transparent;
+    padding: 2px;
+    margin-left: 3vw;
+  }
+
 li img {
-    width: 80%;
+    width: 75%;
     height: auto;
+    padding-top: 1vw;
 }
 
 #header-logo {
     grid-column-start: 1;
 }
 
-#header-boutton-hebergements {
+#header-bouton-hebergements {
     grid-column-start: 3;
-
 }
 
-#header-boutton-activites {
+#header-bouton-hebergements button {
+    border-top: solid 2px var(--main-color); 
+    color: var(--main-color);
+}
+
+#header-bouton-activites {
     grid-column-start: 4;
+    border: none;
+    color: black;
 } 
+/* version hover : desactiver #header-bouton-hebergement button
+button:hover {
+    border-top: solid 2px var(--main-color); 
+    color: var(--main-color);
+}
+*/
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
