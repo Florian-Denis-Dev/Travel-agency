@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -62,12 +64,17 @@ a {
 
 #header {
     display: grid;
-    grid-template-columns: 70% 10% 10% 10%;
-    grid-template-rows: 100%;
+    grid-template-columns: 1fr 7fr 1fr 1fr; 
+    grid-template-rows: 1fr;
 }
 
 nav ul {
     list-style: none;
+}
+
+li img {
+    width: 80%;
+    height: auto;
 }
 
 #header-logo {
@@ -76,6 +83,7 @@ nav ul {
 
 #header-boutton-hebergements {
     grid-column-start: 3;
+
 }
 
 #header-boutton-activites {
