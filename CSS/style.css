@@ -252,8 +252,8 @@ display: none;
 }
 
 .hebergements-cards img {
-    width: 215px;
-    height: 100px;
+    width: 235px;
+    height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -272,7 +272,7 @@ display: none;
 }
 
 .hebergements-cards .card-subtitle {
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .hebergements-cards .card-rating {
@@ -327,6 +327,11 @@ display: none;
     margin-bottom: 5px;
 }
 
+/********************************** Activités *************************************/
+
+#activites {
+    padding: 30px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
