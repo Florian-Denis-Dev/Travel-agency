@@ -14,6 +14,7 @@
 
 .icon {
     color: var(--main-color);
+    margin-right: 10px;
 }
 
 .fa-location-dot {
@@ -69,7 +70,7 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-/********** header *****************/
+/******************************************* header ******************************************/
 
 #header {
     display: grid;
@@ -119,7 +120,7 @@ button:hover {
     color: var(--main-color);
 }
 */
-/************* recherche hébergement *************/
+/****************************************************** recherche hébergement ****************************************************/
 
 article {
     padding: 2vw;
@@ -165,9 +166,46 @@ border-color: var(--main-color);
 gap: 10px;
 display: none;
 }
+/**************************************** Filtres ******************************************/
+
+.grid-filtres{
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+}
+
+.filtres {
+    border: solid var(--second-color) 2px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
 
 
-/****** Hebergements And Populaires ***********/
+/* filtres hover*/
+
+.filtres:hover {
+    background-color:var(--filter-bg-color) ;
+}
+/*********************************************** info **********************************/
+.info {
+    border: solid var(--second-color) 2px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center; 
+}
+.fa-info {
+    margin: 0 5px 0 5px ;
+}
+/***************************************************************** Hebergements And Populaires ******************************************/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -180,12 +218,12 @@ display: none;
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/************************************** Hebergements *******************************/
 .hebergements {
     width: 65%;
 }
 
-/****** Populaires ***********/
+/*************************************** Populaires *****************************/
 .populaires {
     width: 32%;
 }
@@ -229,8 +267,6 @@ display: none;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
