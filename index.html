@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -22,41 +22,34 @@
                     <li id="header-logo">
                         <img src="/images/logo/Booki.png" alt="Logo Booki">
                     </li>
-                    <li id="header-bouton-hebergements">
-                        <button>
-                            <a Href="#hebergements">Hébergements</a>
-                        </button>
+                    <li class="header-bouton" id="header-bouton-hebergements">
+                        <h1><a Href="#hebergements">Hébergements</a></h1>
                     </li>
-                    <li  id="header-bouton-activites">
-                        <button>
-                            <a href="#activites">Activités</a>
-                        </button>
+                    <li  class="header-bouton" id="header-bouton-activites">
+                        <h1><a href="#activites">Activités</a></h1>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
+        <main>   
                 <article> 
-                    <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </article>
-                <article>
-                    <form method="get" action="" id="bloc-recherche">
+                    <form method="get" id="bloc-recherche">
                         <label for="bloc-recherche-localisation" id="bloc-recherche-dot">
                             <i class="fa-solid fa-location-dot"></i>
                         </label>
-                        <input type="text" name="localisation" id="bloc-recherche-localisation" placeholder="Marseille, France"></input>
+                        <input type="text" name="localisation" id="bloc-recherche-localisation" placeholder="Marseille, France">
                                 <button id="bloc-recherche-submit">Rechercher</button>
 
                                 <button id="bloc-recherche-submit-mobile">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
                     </form>
-                </article>
                 <article>
                     <div class="flex-filtres titre-filtre">
-                        <h4>Filtres</h4>
+                        <h3>Filtres</h3>
                         <div class="flex-filtres">                                    
                             <div class="filtres"><i class="icon fa-solid fa-money-bill-wave"></i>Economique</div>
                             <div class="filtres"><i class="icon fa-solid fa-person" aria-hidden="true"></i> Familial</div>
@@ -65,8 +58,7 @@
                         </div>             
                     </div>
                 </article>
-                <article class="info-div">
-                    <div class="flex-filtres">
+                    <div class="flex-filtres info-div">
                         <a href="#footer">
                             <div class="info">
                                 <i class="icon fa-xs fa-solid fa-info"></i>
@@ -74,9 +66,7 @@
                         </a>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
-                </article> 
-            </section>
-            <div class="hebergements-and-populaires">
+             <div class="hebergements-and-populaires">
                 <section id="hebergements" class="hebergements">
                     <div>
                         <h3 class="section-title">Hébergements à Marseille</h3>
@@ -198,11 +188,11 @@
                         </a>
                        
                     </div>  
-                    <h3 class="card-title plus">Afficher plus</h3>               
+                    <h4 class="card-title plus">Afficher plus</h4>               
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                        <h3 class="section-title">Les plus populaires</h3>
                         <i class="fa-solid fa-chart-line icon" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
@@ -268,7 +258,7 @@
             </div>
             <section id="activites" class="activites">
                 <div class="activites-title">
-                    <h2 class="section-title">Activités à Marseille</h2>
+                    <h3 class="section-title">Activités à Marseille</h3>
                 </div>
                 <div class="activites-cards">
                     <a href="#">
@@ -276,7 +266,7 @@
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image de bateau sur le vieux port de Marseille">
                             <div class="content">
                                 <div class="card-txt">
-                                    <h3 class="card-title">Vieux-Port</h3>
+                                    <h4 class="card-title">Vieux-Port</h4>
                                 </div>                                
                             </div>
                         </article>
@@ -286,7 +276,7 @@
                             <img src="./images/activites/paul-hermann.jpg" alt="Image d'un fort à Pomègues'">
                             <div class="content">
                                 <div class="card-txt">
-                                    <h3 class="card-title">Fort de Pomègues</h3>
+                                    <h4 class="card-title">Fort de Pomègues</h4>
                                 </div>                                
                             </div>
                         </article>
@@ -296,7 +286,7 @@
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la mer vue du parc nationnal des Calanques">
                             <div class="content">
                                 <div class="card-txt">
-                                    <h3 class="card-title">Parc nationnal des Calanques</h3>
+                                    <h4 class="card-title">Parc nationnal des Calanques</h4>
                                 </div>                                
                             </div>
                         </article>
@@ -306,7 +296,7 @@
                             <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre Dame de La Garde">
                             <div class="content">
                                 <div class="card-txt">
-                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                                    <h4 class="card-title">Notre-Dame-de-la-Garde</h4>
                                 </div>                                
                             </div>
                         </article>
@@ -315,8 +305,7 @@
             </section>
         </main>
         <footer>
-              <section id="footer">
-                <div class="footer">
+                <div class="footer" id="footer">
                     <article class="footer-info">
                         <h3 class="footer-title">À propos</h3>
                         <div class="footer-paragraphe">
@@ -339,8 +328,7 @@
                             <p class="footer-paragraphe">Nous contacter</p>
                         </div>
                     </article>
-                </div>
-              </section> 
+                </div> 
         </footer>
     </div>
 </body>

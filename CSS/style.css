@@ -92,19 +92,20 @@ nav ul {
     list-style: none;
 }
 
-li button {
-    border-style: none;
-    border-width: 0;
-    background-color: transparent;
-    padding: 2px;
-    margin-left: 3vw;
-  }
-
 li img {
     width: 60%;
     height: auto;
     padding-top: 1vw;
 }
+
+h1 {
+    font-weight: normal;
+}
+
+.header-bouton {
+    padding: 2px;
+    margin-left: 3vw;
+  }
 
 #header-logo {
     grid-column-start: 1;
@@ -114,23 +115,17 @@ li img {
     grid-column-start: 3;
 }
 
-#header-bouton-hebergements button {
-    border-top: solid 2px var(--main-color); 
-    color: var(--main-color);
-}
-
 #header-bouton-activites {
     grid-column-start: 4;
-    border: none;
-    color: black;
 } 
 
-/* version hover : desactiver #header-bouton-hebergement button
-button:hover {
+/***** Header hover *********/
+
+.header-bouton:hover {
     border-top: solid 2px var(--main-color); 
     color: var(--main-color);
 }
-*/
+
 
 /****************************************************** recherche hébergement ****************************************************/
 
