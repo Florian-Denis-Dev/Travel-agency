@@ -245,11 +245,13 @@ display: none;
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid black;
+
 }
 
 .hebergements-cards .card {
     display: flex;
-    margin:  20px 20px 0 0;
+    margin:  12px;
     flex-direction: column;
 }
 
@@ -261,7 +263,6 @@ display: none;
 }
 
 .hebergements-cards .card-content {
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -391,17 +392,25 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/***************************************** Le code ci-dessous correspond à la version responsive uniquement *********************************************/
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards .card {
+        margin:  8px;
     }
 
     .populaires {
@@ -429,12 +438,99 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
-     
+  
+/************* header **********/
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#header-logo {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+ 
+}
+
+li img {
+    width: 60%;
+    height: auto;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+#header-bouton-hebergements {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+}
+
+#header-bouton-activites {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+ 
+} 
+
+.header-bouton:hover {
+    border-top: none;
+    border-bottom: solid 2px var(--main-color); 
+    color: var(--main-color);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 767.98;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/**** changement bouton recherche *******/
 #bloc-recherche-submit {
         display: none;
 }
 #bloc-recherche-submit-mobile {
     display:unset ;
 }
+
+/******** recherche *********/
+
+.recherche-container {
+    margin: 20px;
 }
+
+
+
+/******* hebergeemnt + populaire *********/
+
+.hebergements-and-populaires {
+    flex-direction: column;
+    width: 100%;
+}
+
+/*** HEBERGEMENTS ****/
+.hebergements {
+    width: 100%;
+}
+
+.hebergements-cards .card {
+    margin:  8px;
+}
+
+/**** populaire *****/
+
+.populaires {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+
+
