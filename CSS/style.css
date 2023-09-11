@@ -51,6 +51,8 @@ button a {
     font-size: large;
 }
 
+
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -240,6 +242,7 @@ display: none;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
+    padding: 20px;
 }
 
 /******************************** Hebergements *****************************/
@@ -403,18 +406,42 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+    /*** header ***/
+    
+    
+   #header {
+        grid-template-columns: 1fr 6fr 1fr 1fr; 
+   }
+   
+   li img {
+        width: 100%;
+   }
+
+   .header-bouton {
+    font-size: x-small;
+   }
+    /*** hebergement + populaires ***/
 
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+    /*** hebergements ***/
+
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards {
+        justify-content: space-between;
+        margin-top: 30px;
     }
 
     .hebergements-cards .card {
         margin:  8px;
     }
+
+    /*** populaires ***/
 
     .populaires {
         width: 100%;
@@ -438,6 +465,24 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /*** Activités ***/
+
+    .activites-cards .card {
+        justify-content: space-between;
+        margin-right: 20px;
+    } 
+
+    .activites-cards img {
+        width: 180px;
+        height: 170px;
+    }
+
+    .activites-cards .card-title {
+        font-size: 15px;
+        padding-bottom: 14px;
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
@@ -565,6 +610,7 @@ li img {
 .hebergements-and-populaires section {
     border-radius: 0;
     justify-content: center;
+    padding: 20px 0 20px 0;
 }
 
 /*** HEBERGEMENTS ****/
@@ -581,7 +627,7 @@ li img {
 .hebergements-cards {
     display: flex;
     margin-top: 8px;
-    padding: 0;
+    padding: 20px;
 }
 .hebergements-cards .card {
     margin: 20px 0;
@@ -589,7 +635,6 @@ li img {
 
 .hebergements-cards img {
     width: 20rem;
- 
 }
 
 .card{
