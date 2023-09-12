@@ -132,7 +132,7 @@ h1 {
 /****************************************************** recherche hébergement ****************************************************/
 
 .recherche-article {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 20px 0;
 }
 
 #bloc-recherche {
@@ -246,6 +246,7 @@ display: none;
 }
 
 /******************************** Hebergements *****************************/
+
 .hebergements {
     width: 65%;
  }
@@ -253,11 +254,13 @@ display: none;
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
+    margin: -10px;
+    padding-top: 30px;
 }
 
 .hebergements-cards .card {
     display: flex;
-    margin:  12px;
+    margin:  10px;
     flex-direction: column;
 }
 
@@ -468,19 +471,27 @@ footer {
 
     /*** Activités ***/
 
+    .activites-cards {
+       width: 90%;
+       padding: 0;
+       margin: 10px;
+    }
+
     .activites-cards .card {
-        justify-content: space-between;
-        margin-right: 20px;
+       justify-content: space-between;
+       margin-right: 10px;
+       padding-bottom: 14px;
     } 
 
     .activites-cards img {
-        width: 180px;
-        height: 170px;
+        width: 200px;
+        height: 230px;
     }
 
     .activites-cards .card-title {
         font-size: 15px;
-        padding-bottom: 14px;
+        padding-top: 14px;
+        margin: 10px 0 10px 0;
     }
     
 }
@@ -590,14 +601,15 @@ li img {
 
 .flex-filtres {
     flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 .filtres {
     display: flex;
     justify-content: center;
-    width: 125px;
-    margin: 5px;
-    padding: 5px;
+    width: 120px;
+    margin: 2px;
+    padding: 12px;
 }
 
 /********* info **********/
@@ -620,10 +632,9 @@ li img {
 
 /*** HEBERGEMENTS ****/
 
-.hebergements {
-    padding-top: 20px;
+.hebergements .section-title {
     padding-left: 20px;
-    padding-right: 0;
+    padding-top: 30px;
 }
 
 .hebergements-and-populaires .hebergements {
@@ -632,10 +643,11 @@ li img {
 .hebergements-cards {
     display: flex;
     margin-top: 8px;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 .hebergements-cards .card {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .hebergements-cards img {
@@ -682,13 +694,23 @@ li img {
 .activites-cards {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin: 0;
 }
 
 .activites-cards img {
     height: 150px;
-    width: 285px;
+    width: inherit;
  }
+
+.activites-cards .card {
+    margin: 30px 0 10px 0;
+    padding: 0;
+}
+
+
+.activites-cards .card-title {
+    margin: 0 20px 20px 30px;
+}
 
 /****** Footer ***/
 
