@@ -370,7 +370,8 @@ display: none;
 /*************************************************** Activités ****************************************************/
 
 #activites {
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .activites {
