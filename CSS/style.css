@@ -23,6 +23,7 @@
 
 .fa-location-dot {
     color: black;
+    margin-bottom: 4px;
 }
 
 .fa-magnifying-glass {
@@ -51,7 +52,9 @@ button a {
     font-size: large;
 }
 
-
+h2 {
+    font-size: larger;
+}
 
 .section-title {
     margin: 0;
@@ -132,32 +135,35 @@ h1 {
 
 /****************************************************** recherche hébergement ****************************************************/
 
-.recherche-article .section-title {
-    margin-bottom: 10px;
+.recherche-container {
+    padding: 10px 0 20px 0;
 }
 
-.recherche-article {
-    padding: 10px 0 20px 0;
+.recherche-article .section-title {
+    margin-bottom: 10px;
 }
 
 #bloc-recherche {
     display: flex;
     justify-content: flex-start;
+    padding-bottom: 15px;
+    padding-top: 20px;
 }
 
 #bloc-recherche-dot {
-    padding: 10px 15px 10px;
+    padding: 10px 15px 10px 20px;
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
 }
 
 #bloc-recherche-localisation{
     border: 2px solid var(--main-bg-color);
+    padding-right: 30px;
 }
 
 ::placeholder {
     color: black;
-    padding-left: 10px;
+    padding-left: 20px;
     font-weight: bold;
     border-color: var(--main-bg-color);
     font-size: medium;
@@ -167,10 +173,11 @@ h1 {
 #bloc-recherche-submit {
     background-color: var(--main-color);
     border-radius: 0 15px 15px 0;
-    border-color: var(--main-color);
+    border-color: transparent;
     padding: 0 10px;
     color: var(--main-bg-color);
-    font-weight: bold;
+    font-weight: 500;
+    font-size: medium;
 }
 
 #bloc-recherche-submit-mobile {
@@ -185,15 +192,31 @@ display: none;
 
 /******************************** Filtres *********************************/
 
+.recherche-article .titre-filtre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: small;
+}
+
 .flex-filtres{
  display: flex;
  align-items: center;
  justify-content: flex-start;
 }
 
+.titre-filtres .flex-filtres {
+    margin-left: 10px;
+}
+
+.titre-filtre h3 {
+    padding-right: 10px;
+}
+
 .filtres {
     border: solid var(--second-color) 2px;
     font-weight: bold;
+    font-size: medium;
     border-radius: 25px;
     margin: 10px;
     padding: 10px;
@@ -214,16 +237,12 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-   }
-
-.info-div {
-    padding-top: 0;
 }
 
 .info {
     border: solid var(--second-color) 2px;
     border-radius: 25px;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     padding: 10px;
     width: max-content;
     height: max-content;
@@ -256,16 +275,20 @@ display: none;
     width: 65%;
  }
 
+.hebergements .section-title {
+    margin-left: 15px;
+}
+
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    margin: -10px;
-    padding-top: 30px;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .hebergements-cards .card {
     display: flex;
-    margin:  10px;
+    margin:  15px;
     flex-direction: column;
 }
 
