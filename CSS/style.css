@@ -1,4 +1,4 @@
-/************************************************** General **********************************************/
+/************************************** General **************************************/
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -85,7 +85,7 @@ h2 {
     color: var(--main-bg-color)
 }
 
-/**************************************************** header ************************************************/
+/***************************** header ********************************/
 
 #header {
     display: grid;
@@ -134,7 +134,7 @@ h1 {
 }
 
 
-/****************************************************** recherche hébergement ****************************************************/
+/*************************** recherche hébergement **********************/
 
 .recherche-container {
     padding: 10px 0 20px 0;
@@ -191,7 +191,7 @@ gap: 10px;
 display: none;
 }
 
-/******************************** Filtres *********************************/
+/****************************** Filtres *****************************/
 
 .recherche-article .titre-filtre {
     display: flex;
@@ -225,14 +225,14 @@ display: none;
     height: max-content;
 }
 
-/* filtres hover*/
+/****************** filtres hover*************/
 
 .filtres:hover {
     background-color:var(--filter-bg-color);
     cursor: default;
 }
 
-/************************************* info *********************************/
+/****************************** info ********************************/
 
 .flex-info{
     display: flex;
@@ -255,7 +255,7 @@ display: none;
     margin: 2px 0 2px 0;
 }
 
-/********************************************************* Hebergements And Populaires ************************************************/
+/******************** Hebergements And Populaires *********************/
 
 .hebergements-and-populaires {
     display: flex;
@@ -270,7 +270,7 @@ display: none;
     padding: 20px;
 }
 
-/******************************** Hebergements *****************************/
+/***************************** Hebergements ***************************/
 
 .hebergements {
     width: 65%;
@@ -368,7 +368,7 @@ display: none;
     margin-bottom: 5px;
 }
 
-/*************************************************** Activités ****************************************************/
+/****************************** Activités ****************************/
 
 #activites {
     padding-left: 20px;
@@ -408,7 +408,7 @@ display: none;
      margin: 20px 0 20px 15px;
 }
 
-/******************************************************** Footer ***************************************************/
+/************************** Footer ****************************/
 
 footer {
     margin-top: 70px;
@@ -451,7 +451,7 @@ footer {
         margin: 0 0px 0 0px;
     }
 
-    /*** header ***/
+    /***************************** header ****************/
     
    #header {
         grid-template-columns: 1fr 6fr 1fr 1fr; 
@@ -464,13 +464,13 @@ footer {
    .header-bouton {
     font-size: x-small;
    }
-    /*** hebergement + populaires ***/
+    /************** hebergement + populaires ***************/
 
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    /*** hebergements ***/
+    /********************** hebergements ******************/
 
     .hebergements {
         width: 100%;
@@ -485,7 +485,7 @@ footer {
         margin: 7px;
     }
 
-    /*** populaires ***/
+    /********************* populaires *********************/
 
     .populaires {
         width: 100%;
@@ -510,7 +510,7 @@ footer {
         font-size: 13px;
     }
 
-    /*** Activités ***/
+    /*********************** Activités ****************/
 
     .activites-cards {
         padding-top: 10px;
@@ -536,11 +536,11 @@ footer {
     
 }
 
-/**************** Small devices (phones, less than 768px) ****************/
+/*************************** Small devices (phones, less than 768px) ************************/
 
 @media (max-width: 767.98px) {
   
-/************* header **********/
+/********************* header *********************/
 
 #header {
     display: grid;
@@ -597,7 +597,7 @@ li img {
     box-sizing: border-box;
 }
 
-/**** changement bouton recherche *******/
+/************** changement bouton recherche *****************/
 #bloc-recherche-submit {
     display: none;
 }
@@ -605,7 +605,7 @@ li img {
     display:unset ;
 }
 
-/******** recherche *********/
+/************************ recherche ***********************/
 
 .recherche-container {
     margin: 0px 30px 0 30px;
@@ -632,7 +632,16 @@ li img {
     padding: 12px 10px 0px 15px;
 }
 
-/******* filtres ***********/
+/*********************** filtres **************************/
+
+.recherche-article {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.recherche-article .titre-filtre {
+    align-items: start;
+}
 
 .titre-filtre {
     flex-direction: column;
@@ -641,24 +650,27 @@ li img {
 
 .flex-filtres {
     flex-wrap: wrap;
-    padding-top: 10px;
+    padding-top: 20px;
+    justify-content: space-between;
 }
 
 .filtres {
     display: flex;
-    justify-content: center;
-    width: 120px;
-    margin: 2px;
+    justify-content: flex-start;
+    font-size: small;
+    width: 110px;
+    height: 12px;
     padding: 12px;
+    margin: 5px 0px 5px 0px;
 }
 
-/********* info **********/
+/***************************** info **************************/
 
 .info-div {
     font-size: small;
 }
 
-/******* hebergement + populaire *********/
+/******************* hebergement + populaire ******************/
 
 .hebergements-and-populaires {
     flex-direction: column-reverse;
@@ -667,10 +679,10 @@ li img {
 .hebergements-and-populaires section {
     border-radius: 0;
     justify-content: center;
-    padding: 20px 0 20px 0;
+    padding: 0;
 }
 
-/*** HEBERGEMENTS ****/
+/************************** HEBERGEMENTS ************************/
 
 .hebergements .section-title {
     padding-left: 20px;
@@ -702,17 +714,18 @@ li img {
     margin-left: 25px;
 }
 
-/**** populaire *****/
+/************************* populaire *************************/
 
 .populaires-title {
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    
+    margin: 30px 20px 0 20px;  
 }
 .populaires {
     justify-content: center;
     padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .populaires-cards {
@@ -724,7 +737,11 @@ li img {
     margin: 20px 0 0 20px ;
 }
 
-/**** activites ****/
+.plus {
+    padding: 0;
+}
+
+/*************************** activites **********************/
 
 
 .activites {
@@ -752,7 +769,7 @@ li img {
     margin: 0 20px 20px 30px;
 }
 
-/****** Footer ***/
+/*********************** Footer *********************/
 
 .footer{
     flex-direction: column;
