@@ -745,6 +745,10 @@ h3 {
     margin: 0;
 }
 
+.card-title {
+margin: 0;
+}
+
 .plus {
     margin-left: 25px;
 }
