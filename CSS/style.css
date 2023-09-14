@@ -557,7 +557,7 @@ footer {
 }
 
 li img {
-    width: 50%;
+    width: 40%;
     margin-top: 40px;
     margin-left: 40px ;
 }
@@ -620,18 +620,21 @@ li img {
 }
 
 .recherche-container {
-    margin: 0px 30px 30px 30px;
+    margin: 0;
     padding: 0;
 }
 
 .recherche-article {
     padding: 0;
-    margin: 0; 
     min-width: 300px;
 }
 
 .section-title {
     font-size: 6vw;
+}
+
+.combo {
+    margin: 0 30px 0 30px;
 }
 
 #bloc-recherche {
@@ -660,9 +663,8 @@ li img {
 
 /*********************** filtres **************************/
 
-.recherche-article {
-    margin-top: 0;
-    margin-bottom: 8px;
+h3 {
+    margin-left: 20px;
 }
 
 .recherche-article .titre-filtre {
@@ -681,7 +683,8 @@ h3 {
 
 .flex-filtres {
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin: 10px;
     justify-content: space-around;
 }
 
@@ -689,15 +692,17 @@ h3 {
     display: flex;
     justify-content: flex-start;
     font-size: 4vw;
-    width: 32vw;
-    padding: 12px;
-    margin: 7.5px 0px 7.5px 0px;
+    width: 35vw;
 }
 
 /***************************** info **************************/
 
 .info-div {
     font-size: small;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /******************* hebergement + populaire ******************/
@@ -812,10 +817,16 @@ h3 {
 
 .footer{
     flex-direction: column;
-
 }
+
+.footer-info h3 {
+    margin: 0;
+}
+
 .footer-info {
     width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-title {
