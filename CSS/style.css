@@ -168,6 +168,7 @@ h1 {
     font-weight: bold;
     border-color: var(--main-bg-color);
     font-size: medium;
+    padding-inline-end: 150%;
 }
 
 
