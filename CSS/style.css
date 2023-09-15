@@ -323,6 +323,7 @@ display: none;
 
 .plus {
     padding-top: 33px;
+    padding-left: 20px;
 }
 /******************************** Populaires **************************/
 .populaires {
@@ -483,6 +484,10 @@ footer {
 
     .hebergements-cards .card {
         margin: 7px;
+    }
+
+    .plus {
+        padding-left: 0;
     }
 
     /********************* populaires *********************/
