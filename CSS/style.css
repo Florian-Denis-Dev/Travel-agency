@@ -88,47 +88,41 @@ h2 {
 /***************************** header ********************************/
 
 #header {
-    display: grid;
-    grid-template-columns: 1fr 7fr 1fr 1fr; 
-    grid-template-rows: 1fr;
+    display: flex;
     margin-bottom: 33px;
+    justify-content: space-between;
 }
 
 nav ul {
     list-style: none;
 }
 
-li img {
-    width: 55%;
+#header-logo {
+    width: 4vw;
     height: auto;
     padding-top: 2vw;
+
 }
 
 h1 {
-    font-weight: normal;
+    font-size: 1.3vw;
+    font-weight: 200;
 }
 
 .header-bouton {
+    display: flex;
+  }
+
+  .header-bouton-hover {
     padding-top: 10px;
     margin-left: 3vw;
     border-top: solid 4px transparent;
   }
 
-#header-logo {
-    grid-column-start: 1;
-}
-
-#header-bouton-hebergements {
-    grid-column-start: 3;
-}
-
-#header-bouton-activites {
-    grid-column-start: 4;
-} 
 
 /***** Header hover *********/
 
-.header-bouton:hover {
+.header-bouton-hover:hover {
     border-top: solid 4px var(--main-color); 
     color: var(--main-color);
 }
@@ -283,10 +277,11 @@ display: none;
 }
 
 .hebergements-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
     padding-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
 }
 
 .hebergements-cards .card {
@@ -459,8 +454,8 @@ footer {
         grid-template-columns: 1fr 6fr 1fr 1fr; 
    }
    
-   li img {
-        width: 100%;
+   #header-logo {
+        width: 6vw;
    }
 
    .header-bouton {
@@ -549,44 +544,29 @@ footer {
 /********************* header *********************/
 
 #header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
 }
 
 #header-logo {
-    display: grid;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    width: 15vw;
+    margin: 20px 0;
+}
+
+.header-logo {
+    display: flex;
     justify-content: center;
-    padding-left: 40px;
 }
-
-li img {
-    width: 40%;
-    margin-top: 40px;
-    margin-left: 40px ;
-}
-
-#header-bouton-hebergements {
-    display: grid;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-
-}
-
-#header-bouton-activites {
-    display: grid;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
- 
-} 
 
 .header-bouton{
- margin: 0;
- padding-bottom: 15px;
- align-items: end;
- justify-content: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+.header-bouton-hover{
  border-bottom: solid 4px var(--main-bg-color);
 }
 
