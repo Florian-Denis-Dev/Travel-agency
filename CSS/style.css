@@ -719,10 +719,10 @@ h3 {
     background-color: unset;
 }
 .hebergements-cards {
-    display: flex;
+    grid-template-columns: 1fr;
     margin-top: 8px;
-    padding: 0;
-    margin: 0;
+   padding: 0;
+    margin: 0; 
 }
 .hebergements-cards .card {
     margin: 20px;
