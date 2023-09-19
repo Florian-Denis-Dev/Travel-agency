@@ -548,7 +548,7 @@ footer {
 }
 
 #header-logo {
-    width: 15vw;
+    width: 17vw;
     margin: 20px 0;
 }
 
@@ -558,27 +558,26 @@ footer {
 }
 
 .header-bouton{
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 
 .header-bouton-hover{
- border-bottom: solid 4px var(--main-bg-color);
- padding-left: 14vw;
- padding-right: 14vw;
- padding-bottom: 5vw;
+ border-bottom: solid 3px var(--main-bg-color);
  margin: 0;
- border: 1px solid red
+ display: flex;
+ justify-content: center;
+ padding-bottom: 15px;
 }
-}
-
 
 .header-bouton-hover:hover {
     border-top: none;
-    border-bottom: solid 4px var(--main-color); 
+    border-bottom: solid 3px var(--main-color); 
     color: var(--main-color);
 }
 
