@@ -165,12 +165,15 @@ h1 {
     padding-inline-end: 150%;
 }
 
+.bouton-search {
+    border: none;
+}
 
 #bloc-recherche-submit {
     background-color: var(--main-color);
     border-radius: 0 15px 15px 0;
     border-color: transparent;
-    padding: 0 10px;
+    padding: 10px;
     color: var(--main-bg-color);
     font-weight: 500;
     font-size: medium;
@@ -182,8 +185,7 @@ padding: 15px;
 margin: 0;
 border-radius: 3vw;
 border-color: transparent;
-gap: 10px;
-box-shadow: 0px 4px var(--second-color);
+box-shadow: 0px 4px 5px var(--second-color);
 display: none;
 }
 
@@ -721,7 +723,7 @@ h3 {
 .hebergements-cards {
     grid-template-columns: 1fr;
     margin-top: 8px;
-   padding: 0;
+    padding: 0;
     margin: 0; 
 }
 .hebergements-cards .card {
