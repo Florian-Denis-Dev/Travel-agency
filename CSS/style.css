@@ -111,13 +111,13 @@ h1 {
 
 .header-bouton {
     display: flex;
-  }
+}
 
-  .header-bouton-hover {
+.header-bouton-hover {
     padding-top: 10px;
     margin-left: 3vw;
     border-top: solid 4px transparent;
-  }
+}
 
 
 /***** Header hover *********/
@@ -167,6 +167,7 @@ h1 {
 
 .bouton-search {
     border: none;
+    background-color: transparent;
 }
 
 #bloc-recherche-submit {
